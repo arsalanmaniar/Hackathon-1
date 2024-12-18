@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+  <h1>Shareable Resume Builder</h1>  
+  <form id="resume-form">
+    <fieldset>
+        <legend>Persnoal Information</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Your username" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Nmae" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Your email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter Your phone number" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="e education">Education</label>
+        <textarea id="education" placeholder="Enter Your Education" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="e experience">Experience</label>
+        <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="e skills">Skills</label>
+        <textarea id="skills" placeholder="Enter Yor skills" rows="4" required></textarea>
+    </fieldset>
+
+
+    <button><b>Generate Resume</b></button>
+  </form>
+  <br>
+  <!-- Dynamic Resume and Editable Resume-->
+  <div id="resume-display" contenteditable="true">
+      <!-- resume Generate -->
+    </div>
+
+    <br>
+
+    <div id="shareable-link-container" style="display: none;">
+        <h2>shareable Link</h2>
+        <p>here is your unique link to view edit your resume</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
